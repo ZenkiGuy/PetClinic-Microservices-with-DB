@@ -178,7 +178,7 @@ resource "aws_instance" "worker-1" {
     instance_type = "t3a.medium"
     vpc_security_group_ids = [aws_security_group.petclinic-kube-worker-sg.id, aws_security_group.petclinic-mutual-sg.id]
 <<<<<<< HEAD
-    key_name = "clarus"
+    key_name = "petclinic-ansible-test-dev.key"
 =======
     key_name = "petclinic-ansible-test-dev.key"
 >>>>>>> feature/msp-16
@@ -198,7 +198,7 @@ resource "aws_instance" "worker-2" {
     instance_type = "t3a.medium"
     vpc_security_group_ids = [aws_security_group.petclinic-kube-worker-sg.id, aws_security_group.petclinic-mutual-sg.id]
 <<<<<<< HEAD
-    key_name = "clarus"
+    key_name = "petclinic-ansible-test-dev.key"
 =======
     key_name = "petclinic-ansible-test-dev.key"
 >>>>>>> feature/msp-16
