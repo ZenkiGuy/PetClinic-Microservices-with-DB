@@ -157,7 +157,11 @@ resource "aws_instance" "kube-master" {
     instance_type = "t3a.medium"
     iam_instance_profile = aws_iam_instance_profile.petclinic-master-server-profile.name
     vpc_security_group_ids = [aws_security_group.petclinic-kube-master-sg.id, aws_security_group.petclinic-mutual-sg.id]
-    key_name = "clarus"
+<<<<<<< HEAD
+    key_name = "petclinic-ansible-test-dev.key"
+=======
+    key_name = "petclinic-ansible-test-dev.key"
+>>>>>>> feature/msp-16
     subnet_id = "subnet-066b3a8669e304af2"  # select own subnet_id of us-east-1a
     availability_zone = "us-east-1a"
     tags = {
@@ -173,7 +177,11 @@ resource "aws_instance" "worker-1" {
     ami = "ami-053b0d53c279acc90"
     instance_type = "t3a.medium"
     vpc_security_group_ids = [aws_security_group.petclinic-kube-worker-sg.id, aws_security_group.petclinic-mutual-sg.id]
+<<<<<<< HEAD
     key_name = "clarus"
+=======
+    key_name = "petclinic-ansible-test-dev.key"
+>>>>>>> feature/msp-16
     subnet_id = "subnet-066b3a8669e304af2"  # select own subnet_id of us-east-1a
     availability_zone = "us-east-1a"
     tags = {
@@ -189,7 +197,11 @@ resource "aws_instance" "worker-2" {
     ami = "ami-053b0d53c279acc90"
     instance_type = "t3a.medium"
     vpc_security_group_ids = [aws_security_group.petclinic-kube-worker-sg.id, aws_security_group.petclinic-mutual-sg.id]
+<<<<<<< HEAD
     key_name = "clarus"
+=======
+    key_name = "petclinic-ansible-test-dev.key"
+>>>>>>> feature/msp-16
     subnet_id = "subnet-066b3a8669e304af2"  # select own subnet_id of us-east-1a
     availability_zone = "us-east-1a"
     tags = {
